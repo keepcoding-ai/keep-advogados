@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keep para advogados</title>
+<meta name="description" content="Keep é uma agente de IA que trabalha como o estagiário do advogado autônomo: acompanha prazos, organiza a agenda, atende clientes no WhatsApp e prepara rascunhos para a sua revisão.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Keep para advogados — o seu estagiário de IA">
+<meta property="og:description" content="Você advoga sozinho. Mas não precisa fazer tudo sozinho. Ela organiza, lembra, resume e responde — você revisa e decide.">
+<meta property="og:image" content="https://keepcoding-ai.github.io/keep-advogados/og-keep-advogado.jpg">
+<meta property="og:image:secure_url" content="https://keepcoding-ai.github.io/keep-advogados/og-keep-advogado.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Keep para advogados">
+<meta property="og:image" content="https://keepcoding-ai.github.io/keep-advogados/og-keep-advogado-sq.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://keepcoding-ai.github.io/keep-advogados/og-keep-advogado.jpg">
+<meta name="robots" content="noindex">
+<link rel="apple-touch-icon" href="og-keep-advogado-sq.jpg">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#17110e; --bg2:#1f1714; --card:#261c18; --line:rgba(255,230,210,.12);
+  --text:#f6eee8; --muted:#c9b8ad; --peach:#ffd2b0; --accent:#e8684a; --accent2:#f07d5f;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.55;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+/* nav */
+nav{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;gap:28px;padding:22px 40px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;text-decoration:none;letter-spacing:-.02em}
+.logo img{width:30px;height:30px}
+nav .links{display:flex;gap:22px;font-size:14px;font-weight:600}
+nav .links a{text-decoration:none;opacity:.9}
+nav .links a:hover{color:var(--peach)}
+nav .right{margin-left:auto;font-size:14px;font-weight:600}
+nav .right a{text-decoration:none}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 60px;
+  background:linear-gradient(90deg,rgba(23,17,14,.88) 0%,rgba(23,17,14,.62) 50%,rgba(23,17,14,.35) 100%),linear-gradient(0deg,var(--bg) 0%,rgba(23,17,14,0) 35%),url(hero.jpg) center right/cover no-repeat}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(34px,5.4vw,64px);line-height:1.06;letter-spacing:-.035em;font-weight:800;margin:16px 0 18px}
+h1 span{display:block;color:var(--peach)}
+.sub{font-size:clamp(17px,1.8vw,22px);color:#e9ddd5;max-width:680px}
+.cmd{margin:38px auto 0;width:min(520px,100%);display:flex;align-items:center;gap:12px;padding:10px 10px 10px 22px;border-radius:999px;background:rgba(255,240,230,.12);border:1px solid rgba(255,240,230,.25);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);text-align:left}
+.cmd .txt{flex:1;font-size:17px;font-weight:500;min-height:1.5em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cmd .txt.swap{animation:swap .5s var(--ease)}
+@keyframes swap{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cmd button{flex:none;width:40px;height:40px;border-radius:50%;border:0;background:var(--accent);color:#fff;font-size:18px;cursor:pointer;transition:transform .2s var(--ease),background .2s}
+.cmd button:hover{transform:scale(1.08);background:var(--accent2)}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:17px 34px;border-radius:999px;box-shadow:0 10px 30px -8px rgba(232,104,74,.6);transition:transform .25s var(--ease),background .2s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);background:var(--accent2);box-shadow:0 16px 36px -8px rgba(232,104,74,.7)}
+.btn:active{transform:translateY(0) scale(.98)}
+.hero .cta{margin-top:46px}
+.hero small{display:block;margin-top:12px;font-size:13px;color:var(--muted)}
+/* sections */
+section{padding:110px 0}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2)}
+h2{font-size:clamp(28px,3.6vw,44px);line-height:1.12;letter-spacing:-.03em;font-weight:800;margin:10px 0 14px;max-width:760px}
+.lead{color:var(--muted);font-size:18px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .3s var(--ease),border-color .3s}
+.card:hover{transform:translateY(-4px);border-color:rgba(232,104,74,.45)}
+.ic{width:44px;height:44px;border-radius:12px;background:rgba(232,104,74,.15);color:var(--peach);display:grid;place-items:center;font-size:21px;margin-bottom:18px}
+.card h3{font-size:19px;letter-spacing:-.01em;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15.5px}
+.card .ex{margin-top:14px;font-size:14px;color:var(--peach);font-style:italic}
+/* timeline */
+.day{background:var(--bg2)}
+.tl{margin-top:52px;position:relative;display:grid;gap:14px}
+.tl::before{content:"";position:absolute;left:72px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--accent),rgba(232,104,74,.1))}
+.tl li{list-style:none;display:grid;grid-template-columns:56px 1fr;gap:40px;align-items:start}
+.tl time{font-weight:800;font-size:20px;color:var(--peach);text-align:right;padding-top:18px;position:relative}
+.tl time::after{content:"";position:absolute;right:-22px;top:26px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg2)}
+.tl .box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 24px}
+.tl .box b{display:block;font-size:17px;margin-bottom:4px}
+.tl .box p{color:var(--muted);font-size:15.5px}
+.bubble{display:inline-block;margin-top:10px;background:rgba(255,210,176,.1);border:1px solid rgba(255,210,176,.2);border-radius:14px 14px 14px 4px;padding:8px 14px;font-size:14.5px;color:#f3e4d9}
+/* control */
+.ctrl{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:48px}
+.ctrl .card{display:flex;gap:18px}
+.ctrl .ic{flex:none;margin:0}
+.note{margin-top:26px;font-size:14px;color:var(--muted);border-left:3px solid var(--accent);padding-left:14px;max-width:760px}
+/* price */
+.price{text-align:center}
+.price h2,.price .lead{margin-left:auto;margin-right:auto}
+.pcard{margin:48px auto 0;max-width:460px;text-align:left;border-radius:26px;padding:38px 34px;background:linear-gradient(160deg,#3a2219 0%,#241915 60%);border:1px solid rgba(232,104,74,.5);box-shadow:0 30px 80px -30px rgba(232,104,74,.45)}
+.pcard .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(232,104,74,.2);color:var(--peach);padding:6px 12px;border-radius:999px}
+.pcard h3{font-size:24px;margin:16px 0 6px}
+.amount{font-size:52px;font-weight:800;letter-spacing:-.04em;line-height:1.1}
+.amount small{font-size:17px;font-weight:600;color:var(--muted);letter-spacing:0}
+.pcard .fine{color:var(--muted);font-size:15px;margin:6px 0 22px}
+.pcard ul{list-style:none;display:grid;gap:10px;margin-bottom:30px}
+.pcard li{padding-left:28px;position:relative;font-size:15.5px}
+.pcard li::before{content:"✓";position:absolute;left:0;color:var(--accent2);font-weight:800}
+.pcard .btn{display:block;text-align:center}
+.ref{margin-top:14px;font-size:12.5px;color:var(--muted);text-align:center}
+/* faq */
+.faq{background:var(--bg2)}
+.faq-list{margin-top:40px;max-width:780px;display:grid;gap:12px}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0 24px}
+summary{cursor:pointer;list-style:none;font-weight:700;font-size:17px;padding:20px 30px 20px 0;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:0;top:16px;font-size:24px;color:var(--accent2);transition:transform .3s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);padding-bottom:20px;font-size:15.5px}
+footer{padding:40px 0;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+/* reveal (só com JS e sem reduced-motion) */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:900px){
+  nav .links{display:none}
+  .grid{grid-template-columns:1fr 1fr}
+  .ctrl{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  nav{padding:18px 16px}
+  .wrap{padding:0 18px}
+  .hero{padding:110px 18px 50px;background-position:72% center}
+  .grid{grid-template-columns:1fr}
+  section{padding:76px 0}
+  .tl::before{left:6px}
+  .tl li{grid-template-columns:1fr;gap:8px;padding-left:28px}
+  .tl time{text-align:left;padding-top:0}
+  .tl time::after{right:auto;left:-27px;top:7px}
+  .cmd .txt{font-size:15.5px}
+  .pcard{padding:30px 22px}
+  .ctrl .card{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#"><img src="favicon.svg" alt="">Keep</a>
+  <div class="links"><a href="#faz">O que faz</a><a href="#dia">Um dia</a><a href="#comando">Privacidade</a><a href="#preco">Preço</a><a href="#faq">Perguntas</a></div>
+  <div class="right"><a href="#preco">Começar</a></div>
+</nav>
+
+<header class="hero">
+  <p class="eyebrow">Keep · Uma agente de IA feita pro seu escritório</p>
+  <h1>Você advoga sozinho.<span>Mas não precisa fazer tudo sozinho.</span></h1>
+  <p class="sub">Ela trabalha como o seu estagiário: organiza, lembra, resume e responde — e você revisa e decide.</p>
+  <div class="cmd" aria-label="Exemplos de pedidos">
+    <span class="txt" id="cmdtxt">Quais prazos vencem esta semana?</span>
+    <button type="button" id="cmdbtn" aria-label="Ver outro pedido">→</button>
+  </div>
+  <div class="cta">
+    <a class="btn" href="https://pay.keepcoding.ai/p/keep" target="_blank" rel="noopener">Vamos começar →</a>
+    <small>A partir de <span data-price>R$ 149,90</span>/mês · cancele quando quiser</small>
+  </div>
+</header>
+
+<main>
+<section id="faz">
+  <div class="wrap">
+    <p class="kicker rv">O que ela faz</p>
+    <h2 class="rv">O que o seu estagiário de IA faz</h2>
+    <p class="lead rv">O trabalho miúdo que come o seu dia. Ela cuida da rotina; o raciocínio jurídico continua sendo seu.</p>
+    <div class="grid">
+      <article class="card rv"><div class="ic">⏳</div><h3>Prazos e publicações</h3><p>Acompanha as publicações dos seus processos e avisa com antecedência o que está para vencer. Nada de descobrir prazo no último dia.</p><p class="ex">“Contestação do processo da Dona Marta vence sexta.”</p></article>
+      <article class="card rv"><div class="ic">📅</div><h3>Audiências e reuniões</h3><p>Mantém sua agenda em ordem, lembra você na véspera e confirma o horário com o cliente.</p><p class="ex">“Audiência às 14h no fórum. Cliente confirmou.”</p></article>
+      <article class="card rv"><div class="ic">💬</div><h3>Clientes no WhatsApp</h3><p>Responde dúvidas simples (“como está meu processo?”), marca horário, pede e recebe documentos — e passa pra você o que é decisão sua.</p><p class="ex">“O Sr. Paulo mandou o RG e o comprovante.”</p></article>
+      <article class="card rv"><div class="ic">📄</div><h3>Resumos de processos</h3><p>Lê a movimentação, a decisão ou o contrato e te entrega o essencial em poucas linhas, com o trecho original ao lado.</p><p class="ex">“Resume a última publicação do processo.”</p></article>
+      <article class="card rv"><div class="ic">✍️</div><h3>Rascunhos para revisar</h3><p>Prepara a primeira versão de petições simples, notificações e e-mails a partir dos seus modelos. Você corrige, aprova e assina.</p><p class="ex">“Rascunho da réplica pronto para você revisar.”</p></article>
+      <article class="card rv"><div class="ic">💰</div><h3>Honorários e cobranças</h3><p>Lembra das parcelas, avisa o cliente com educação e te mostra quem pagou e quem está atrasado.</p><p class="ex">“Lembrete de honorários enviado a 3 clientes.”</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="dia" class="day">
+  <div class="wrap">
+    <p class="kicker rv">Na prática</p>
+    <h2 class="rv">Um dia com o seu estagiário</h2>
+    <p class="lead rv">Ela começa antes de você e fecha o dia depois. Sem pedir café.</p>
+    <ol class="tl">
+      <li class="rv"><time>7h</time><div class="box"><b>Resumo da manhã</b><p>Antes do primeiro café, você recebe as publicações da noite e os prazos da semana.</p><span class="bubble">“Bom dia! 2 publicações novas e 1 prazo vencendo quinta.”</span></div></li>
+      <li class="rv"><time>9h</time><div class="box"><b>Cliente no WhatsApp</b><p>Um cliente pergunta do processo. Ela responde o andamento em linguagem simples e marca uma conversa com você.</p><span class="bubble">“Marquei o Sr. Paulo para amanhã às 10h, tudo bem?”</span></div></li>
+      <li class="rv"><time>13h</time><div class="box"><b>Entre uma audiência e outra</b><p>Você pede um resumo da sentença pelo celular, no corredor do fórum.</p><span class="bubble">“Resume a sentença do processo da Dona Marta.”</span></div></li>
+      <li class="rv"><time>17h</time><div class="box"><b>Rascunho na mesa</b><p>A minuta da réplica já está pronta, baseada no seu modelo. Você revisa, ajusta e decide.</p><span class="bubble">“Rascunho pronto. Marquei 2 pontos para sua atenção.”</span></div></li>
+      <li class="rv"><time>22h</time><div class="box"><b>Dia fechado</b><p>Ela lembra das cobranças pendentes e organiza a agenda de amanhã. Você só dorme.</p><span class="bubble">“Amanhã: 1 audiência, 2 reuniões, 1 prazo. Boa noite.”</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="comando">
+  <div class="wrap">
+    <p class="kicker rv">Segurança e ética</p>
+    <h2 class="rv">Você continua no comando</h2>
+    <p class="lead rv">Ela é estagiária, não sócia. Prepara o terreno — quem decide e assina é você.</p>
+    <div class="ctrl">
+      <article class="card rv"><div class="ic">🧭</div><div><h3>Ela sugere e prepara</h3><p>Organiza, resume e rascunha. A estratégia do caso e as decisões são suas.</p></div></article>
+      <article class="card rv"><div class="ic">✅</div><div><h3>Nada sai sem você aprovar</h3><p>Peças, e-mails e qualquer mensagem importante em seu nome passam pela sua aprovação antes de sair.</p></div></article>
+      <article class="card rv"><div class="ic">⚖️</div><div><h3>Não substitui o advogado</h3><p>Ela não dá parecer jurídico nem orienta o cliente sobre o mérito. Quando o assunto é de advogado, encaminha para você.</p></div></article>
+      <article class="card rv"><div class="ic">🔒</div><div><h3>Sigilo profissional e LGPD</h3><p>Os dados do escritório e dos clientes ficam só com você. Não são vendidos, compartilhados nem usados para treinar nada.</p></div></article>
+    </div>
+    <p class="note rv">A Keep não faz captação de clientes nem publicidade em seu nome. Ela cuida de quem já é seu cliente.</p>
+  </div>
+</section>
+
+<section id="preco" class="price">
+  <div class="wrap">
+    <p class="kicker rv">Preço</p>
+    <h2 class="rv">Um estagiário que custa menos que o almoço da semana</h2>
+    <p class="lead rv">Um plano, tudo incluso.</p>
+    <div class="pcard rv">
+      <span class="tag">Keep para advogados</span>
+      <h3>Seu estagiário de IA</h3>
+      <div class="amount"><span data-price>R$ 149,90</span> <small>/mês</small></div>
+      <p class="fine">Renova todo mês, cancele quando quiser. Sem letra miúda.</p>
+      <ul>
+        <li>Prazos, publicações e agenda</li>
+        <li>Atendimento aos clientes no WhatsApp</li>
+        <li>Resumos de processos e documentos</li>
+        <li>Rascunhos de peças e e-mails para revisão</li>
+        <li>Lembretes de honorários e cobranças</li>
+      </ul>
+      <a class="btn" href="https://pay.keepcoding.ai/p/keep" target="_blank" rel="noopener">Vamos começar →</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <p class="kicker rv">Perguntas</p>
+    <h2 class="rv">Perguntas frequentes</h2>
+    <div class="faq-list">
+      <details class="rv"><summary>É um aplicativo?</summary><p>Não precisa instalar nada novo. Você conversa com ela pelo WhatsApp, como faria com um estagiário de verdade.</p></details>
+      <details class="rv"><summary>Ela assina petições?</summary><p>Não. Ela prepara rascunhos a partir dos seus modelos; você revisa, ajusta e assina. A responsabilidade técnica é sempre sua.</p></details>
+      <details class="rv"><summary>E o sigilo profissional?</summary><p>Os dados do escritório e dos clientes ficam só com você, tratados conforme a LGPD. Não são compartilhados nem usados para treinar outras IAs.</p></details>
+      <details class="rv"><summary>Preciso configurar tudo?</summary><p>Não. Você conta como funciona o seu escritório numa conversa e ela vai aprendendo sua rotina, seus modelos e seus clientes.</p></details>
+      <details class="rv"><summary>Posso cancelar?</summary><p>Quando quiser. A assinatura renova todo mês e você cancela sem multa e sem burocracia.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>Keep · Um produto KeepCoding</footer>
+
+<script>
+// Preço em um único lugar:
+const PRECO = "R$ 149,90";
+document.querySelectorAll("[data-price]").forEach(e => e.textContent = PRECO);
+
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+// Caixa de comando: alterna pedidos
+const pedidos = ["Quais prazos vencem esta semana?","Resume a última publicação do processo","Confirma a audiência de quinta com o cliente","Manda o lembrete de honorários"];
+let i = 0; const t = document.getElementById("cmdtxt");
+function next(){ i = (i+1) % pedidos.length; t.textContent = pedidos[i]; if(!reduce){ t.classList.remove("swap"); void t.offsetWidth; t.classList.add("swap"); } }
+let timer = setInterval(next, 3200);
+document.getElementById("cmdbtn").addEventListener("click", () => { clearInterval(timer); next(); timer = setInterval(next, 3200); });
+
+// Reveal com stagger, só se houver suporte e sem reduced-motion
+if (!reduce && "IntersectionObserver" in window) {
+  document.documentElement.classList.add("js");
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
+  document.querySelectorAll(".grid,.ctrl,.tl,.faq-list").forEach(g => [...g.children].forEach((c,k) => c.style.setProperty("--d", (k*60)+"ms")));
+  document.querySelectorAll(".rv").forEach(el => io.observe(el));
+}
+</script>
+</body>
+</html>
